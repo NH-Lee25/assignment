@@ -38,7 +38,7 @@ Insta – ‘junsi_name place’로 검색했을 때 나온 이미지를 기반�
 - Explaining your choice of algorithms (methods)</h3>
 1. 적은 데이터 양임에도 모델을 학습시키고 성능을 확인 – (TF-IDF + Sequential model)<br>
 TF-IDF는 문서에서 단어의 빈도수에 따라 문서 전체를 벡터화 시키는 방법이다. 예를 들어 전시회 설명 1과 2를 비교할 때, 각각에 대해 설명 1에만 많이 나온 단어, 설명 2에만 많이 나온 단어에 가중치를 두어 나타내는 것이다. 이것을 이용해 전시회 설명 하나를 하나의 벡터로 표현해 낼 수 있게 된다.<br>
-![sequential](./image/sequantial.png)
+<img src="https://user-images.githubusercontent.com/84369886/121608833-9e4d5600-ca8d-11eb-8746-f87e3d132ffe.png" width="70%">
 <br>
 Sequential model은 keras에 있는 모델로, 신경망의 Input layer, Hidden layer, Output Layer를 구성하기 위해 사용된다. 이 때 Input ~ Output의 방향은 일방향으로 레이어에 하나의 입력 텐서와 하나의 출력 텐서가 있는 경우에 적합하다. 이번 주제의 경우, 전시 설명의 각각 문장에 집중하는 것이 아닌 전시 설명 전체를 하나로 인스타 전시회를 분류한다는 점에서 위 모델을 사용하는 것은 적절할 것이라고 판단했다.<br>
 
