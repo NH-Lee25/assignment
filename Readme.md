@@ -52,7 +52,25 @@ Sequential model은 keras에 있는 모델로, 신경망의 Input layer, Hidden 
 
 <h3>IV. Evaluation & Analysis
 - Graphs, tables, any statistics (if any)</h3>
+1번 방법의 경우 0.5이상을 Insta 라벨 1, 0.5 미만을 Insta 라벨 0이라고 했을 때 25개의 Validation data 중에 22개를 제대로 분류해내어, 정확도 88% 로 나타났다.
+<img src= "https://user-images.githubusercontent.com/84369886/121610594-5f210400-ca91-11eb-963e-62e0aee2dbaa.png" width="30%">
+<br>
+2번 방법의 경우 값을 GPU를 사용한 경우 마지막 셀에서<br>
+RuntimeError: CUDA out of memory. Tried to allocate 96.00 MiB (GPU 0; 14.76 GiB total capacity; 13.66 GiB already allocated; 13.75 MiB free; 13.71 GiB reserved in total by PyTorch) <br>
+메모리가 부족하다는 오류가 발생하였고, 이를 해결하기 위해 TPU를 사용해 실행을 해보았다.<br>
+Ran out of memory in memory space hbm. Used 17.01G of 7.48G hbm. Exceeded hbm capacity by 9.53G. TPU <br>
+여전히 메모리가 부족하다는 오류가 발생하였고, 결국 이를 해결하기 위해 batch_size를 2까지 줄이고, 코랩 프로를 결제하였지만 여전히 메모리가 부족하다는 오류가 생겼다.
+15만건의 영화 리뷰 데이터 분석 메모리가 부족하지 않지만, 370여개의 전시회 설명 데이터 분석에는 메모리가 부족한 것은 문제가 있다고 판단했다. 그리고 영화 리뷰 분석과 차이를 찾아본 결과 추측한 원인으로는 영화 리뷰의 경우는 한줄 정도의 짧은 데이터로 15만개가 있었지만, 전시회 설명 데이터는 아주 긴 설명이 370개라는 적은 양이 존재했다는 점이었다. 전시회 분석의 토큰을 보면 밑에와 같이 배열에 모두 값이 들어간 것을 확인할 수 있다.
+<<img src= "https://user-images.githubusercontent.com/84369886/121612682-d5c00080-ca95-11eb-8327-a28e45eac15c.PNG" width="70%">
+그러나 정상적으로 Kobert를 실행시킨 결과값을 보면 data[0]의 토큰이 64개를 모두 채우지 않은 것을 확인했다 (https://moondol-ai.tistory.com/241) <br>
 
+<h3>V. Related Work (e.g., existing studies)
+- Tools, libraries, blogs, or any documentation that you have used to do this project.</h3>
+https://www.tensorflow.org/guide/keras/sequential_model?hl=ko <br>
+https://wikidocs.net/book/2155 <br>
+https://yngie-c.github.io/nlp/2020/07/03/nlp_elmo/<br>
+https://github.com/SKTBrain/KoBERT
 
+ 
 
 
