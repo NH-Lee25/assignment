@@ -4,7 +4,6 @@ Created on Fri May 14 18:31:03 2021
 
 @author: nabu9
 """
-"프로젝트 : 사진 찍는 전시회는 싫어!"
 
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
@@ -66,20 +65,3 @@ df_junsi.to_csv("C:/Users/nabu9/Desktop/2021-1/deep_learning/junsi/0602_0311.csv
 
 
 
-#-------------------------------
-#포스터 정보 한글화(심화, opencv만 안됨. 내 pc의 문제? 포스터 해상도 문제?)
-
-# import pytesseract
-# import cv2
-# import numpy as np
-
-# pytesseract.pytesseract.tesseract_cmd = "C:/Program Files/Tesseract-OCR"
-# config = ('-l kor+eng --oem 3 --psm 4')
-
-# #im=cv2.imread(r"C:\Users\nabu9\Desktop\2021 1학기\딥러닝\전시회\test.jpg")
-
-# #img_array = np.fromfile("C:/Users/nabu9/Desktop/2021-1/deep_learing/jusi/test.jpg", np.uint8)
-# #img_gray = cv2.imdecode(img_array, cv2.IMREAD_GRAYSCALE)
-
-# img_gray=cv2.imread("C:/Users/nabu9/Desktop/2021-1/deep_learing/jusi/test.jpg",cv2.IMREAD_GRAYSCALE)
-# gray_text=pytesseract.image_to_string(img_gray)
