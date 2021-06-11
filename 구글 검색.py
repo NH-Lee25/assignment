@@ -13,7 +13,6 @@ import re
 df_junsi=pd.read_csv("C:/Users/nabu9/Desktop/2021-1/deep_learning/junsi/0602_0311.csv",encoding='utf-8-sig')
 Description_table=pd.DataFrame(columns=["google1","google2","google3"])
 
-#207 0 대체 뭐지
 for junsi_num in range(0,len(df_junsi)):
     print("start",junsi_num)
     
@@ -86,6 +85,4 @@ for junsi_num in range(0,len(df_junsi)):
     Description_table.loc[len(Description_table)]=(description_total[0],description_total[1],description_total[2])
     print("Add value; junsi_num : ",junsi_num)
 
-#Description_table.loc[4][2]
-#Description_table.to_csv("C:/Users/nabu9/Desktop/2021-1/deep_learning/junsi/decription_table_208~.csv",encoding='utf-8-sig',index=None)
 
