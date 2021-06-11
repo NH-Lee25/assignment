@@ -70,7 +70,11 @@ https://www.tensorflow.org/guide/keras/sequential_model?hl=ko <br>
 https://wikidocs.net/book/2155 <br>
 https://yngie-c.github.io/nlp/2020/07/03/nlp_elmo/<br>
 https://github.com/SKTBrain/KoBERT
+<br>
+<h3>VI. Conclusion: Discussion</h3>
+긍정적인 이야기와 부정적인 이야기가 모두 가능할 것 같다. 처음 목표점으로 삼았던 ‘전시회가 인스타용 전시회인가, 아닌가’를 분류, 예측하는 것에 대해서는 굉장히 적은 데이터에 대해서 실행한 것을 고려하면 TF-IDF + Sequential model 로 긍정적인 예측 결과가 나왔다고 생각한다. 하지만 KoBert의 경우 성능이나 결과값을 볼 수도 없이 메모리가 부족하다는 문장으로 그만둘 수 밖에 없었던 것에는 아쉬움으로 남는다. 
+앞으로 추가적인 분석이 가능하다면, 주제적으로는 단순 인스타용 전시회인가 아닌가가 아닌 전시회의 장르 및 주제 등을 분류해내거나 추출해낼 수 있는 프로그램을 생각해 볼 수 있을 것 같다. 또한 과거의 전시회 데이터를 찾기 힘들었다는 점을 감안하여 긴 시간동안 충분한 데이터를 모아 성능을 더 좋게 만드는 것 또한 개선할 부분이라고 생각한다.
 
- 
+
 
 
