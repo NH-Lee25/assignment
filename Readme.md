@@ -2,7 +2,7 @@
 이나현, 경제금융학부, nabu98@naver.com </h3>
 <hr></hr>
 
-프로젝트 설명에 대한 유튜브
+프로젝트 설명에 대한 유튜브 링크 <br>
 https://www.youtube.com/watch?v=xalMH-ccysU
 
 <hr></hr>
