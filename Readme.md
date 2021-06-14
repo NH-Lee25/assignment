@@ -3,8 +3,9 @@
 <hr></hr>
 
 프로젝트 설명에 대한 유튜브 링크 <br>
-https://www.youtube.com/watch?v=xalMH-ccysU
+https://www.youtube.com/watch?v=xalMH-ccysU <br>
 
+※ 4:45의 신경망 -> 뉴런
 <hr></hr>
 
 
